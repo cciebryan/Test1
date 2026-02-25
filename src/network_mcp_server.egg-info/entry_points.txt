@@ -1,0 +1,2 @@
+[console_scripts]
+network-mcp = network_mcp.server:main

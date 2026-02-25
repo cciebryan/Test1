@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: network-mcp-server
+Version: 0.1.0
+Summary: An MCP server providing networking tools: diagnostics, monitoring, and device management
+Requires-Python: >=3.10
+Requires-Dist: mcp>=1.0.0
+Requires-Dist: dnspython>=2.4.0
+Requires-Dist: paramiko>=3.3.0
