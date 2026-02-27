@@ -10,7 +10,6 @@ from network_mcp.monitoring import check_host
 has_ping = shutil.which("ping") is not None
 
 
-@pytest.mark.asyncio
 async def test_dns_lookup_structure():
     """dns_lookup should return a well-formed result dict."""
     # Use a public DNS server to avoid local resolver issues
@@ -20,7 +19,6 @@ async def test_dns_lookup_structure():
     assert result["record_type"] == "A"
 
 
-@pytest.mark.asyncio
 async def test_port_scan_returns_structure():
     """Port scan should return a well-structured result."""
     result = await port_scan("127.0.0.1", ports=[80, 443], timeout=0.5)
@@ -32,7 +30,6 @@ async def test_port_scan_returns_structure():
     assert "closed_ports" in result
 
 
-@pytest.mark.asyncio
 @pytest.mark.skipif(not has_ping, reason="ping not available")
 async def test_check_host_localhost():
     """Checking localhost should succeed."""

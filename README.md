@@ -39,11 +39,14 @@ An MCP (Model Context Protocol) server that gives AI assistants powerful network
 
 ```bash
 # Clone the repo
-git clone <this-repo>
-cd network-mcp-server
+git clone https://github.com/cciebryan/Test1.git
+cd Test1
 
 # Install
 pip install -e .
+
+# Install with dev/test dependencies
+pip install -e ".[dev]"
 ```
 
 ## Usage
