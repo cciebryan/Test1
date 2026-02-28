@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "network-mcp": {
+      "command": "python",
+      "args": ["-m", "network_mcp"],
+      "cwd": "."
+    }
+  }
+}
